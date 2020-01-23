@@ -30,12 +30,12 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setValue((int) randCard);
             c.setSuit(Card.SUITS[(int)randSuit]);   
+            
+            System.out.println(c);
         }
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
-        Card yourCard = new Card();
-        
-        yourCard.setValue(8);
+       
         
         //Then report the result here
         System.out.println(yourCard.getValue());
