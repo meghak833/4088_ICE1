@@ -30,6 +30,11 @@ public class CardTrick {
             magicHand[i] = c;
         }
         
+        // Print the 7 cards
+        for (int i = 0; i < magicHand.length; i++){
+            System.out.print(magicHand.get(i) + " ")
+        }
+        
         //insert code to ask the user for Card value and  or Hard code it, create their card
         
         
