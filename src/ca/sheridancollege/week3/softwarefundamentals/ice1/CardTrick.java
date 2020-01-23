@@ -31,6 +31,10 @@ public class CardTrick {
 			magicHand[i] = c;
 		}
 		
+		for (int i = 0; i < magicHand.length; i++) {
+			System.out.println(magicHand[i].getValue() + " of " + magicHand[i].getSuit());
+		}
+		
 		// insert code to ask the user for Card value and or Hard code it, create their
 		// card
 
