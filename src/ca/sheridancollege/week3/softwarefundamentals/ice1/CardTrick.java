@@ -14,8 +14,8 @@ import java.util.*;
  */
 public class CardTrick {
     
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args){
+      Scanner in = new Scanner(System.in);
         int[] magicHand = new int[7];
         String[] magicHandSuit = new String[7];
         
@@ -26,7 +26,7 @@ public class CardTrick {
             magicHand[i] = c.getValue();
             magicHandSuit[i] = c.getSuit();
         }
-
+        
        Card users = new Card();
        System.out.println("What is your card's suit?(Hearts, Diamonds, Spades, Clubs)");
        users.setSuit(in.nextLine());
