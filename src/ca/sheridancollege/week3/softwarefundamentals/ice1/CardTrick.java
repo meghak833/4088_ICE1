@@ -32,9 +32,10 @@ public class CardTrick {
         Card user = new Card();
         user.setValue(3);
         user.setSuit("Clubs");
-        
-        
+       
         //Then report the result here
+        System.out.print(user.getValue());
+        System.out.print(user.getSuit());
     }
     
 }
