@@ -28,8 +28,13 @@ public class CardTrick {
             System.out.println(c.getSuit());
         }
         
+        Card c1=new Card();
+        c1.setValue(4);
+        c1.setSuit("diamond");
         //insert code to ask the user for Card value and  or Hard code it, create their card
         
+        System.out.println("lucky number="+c1.getValue());
+        System.out.println("lucky suit="+c1.getSuit());
         //Then report the result here
     }
     
