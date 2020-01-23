@@ -29,6 +29,8 @@ public class CardTrick {
         System.out.println("Is this your card?");
         System.out.println(magicHand);
         
+        System.out.println(c);
+        
     }
     
 }
