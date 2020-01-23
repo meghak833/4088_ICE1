@@ -34,16 +34,15 @@ public class CardTrick {
             boolean found = false;
             Scanner ln = new Scanner(System.in);
             System.out.println("Please enter a card suit (A String): ");
-            String suit = ln.nextLine().toLowerCase().substring(0, 1);
+            String suit = ln.nextLine().toLowerCase();
             System.out.println("Please enter a card value (An integer): ");
             int value = ln.nextInt();
             for (int i = 0; i < magicHand.length; i++) {
-                if ((magicHand[i].getValue() == value)
-                        && (magicHand[i].getSuit().toLowerCase().substring(0, 1).equals(suit))) {
+                if ((magicHand[i].getValue() == value) && (magicHand[i].getSuit().toLowerCase().equals(suit))) {
                     found = true;
                     System.out.println("Your card was found.");
                     String cardValue;
-                    switch (i) {
+                    switch (magicHand[i].getValue()) {
                         case 1:
                             cardValue = "Ace";
                             break;
