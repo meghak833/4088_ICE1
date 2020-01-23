@@ -59,6 +59,28 @@ public class CardTrick {
                     break;
             }
         }
+        //Declare a lucky card object as King of Hearts
+        Card lucky = new Card();
+        lucky.setValue(13);
+        lucky.setSuit(lucky.SUITS[0]);
+        //Output the user's lucky card as King of Hearts by passing it through the same switch body as above
+        switch(lucky.getValue()){
+                case 1:
+                    System.out.println("Your lucky card is: Ace of " + lucky.getSuit());
+                    break;
+                case 11:
+                    System.out.println("Your lucky card is: Jack of " + lucky.getSuit());
+                    break;
+                case 12:
+                    System.out.println("Your lucky card is: Queen of " + lucky.getSuit());
+                    break;
+                case 13:
+                    System.out.println("Your lucky card is: King of " + lucky.getSuit());
+                    break;
+                default:
+                    System.out.println("Your lucky card is: " + lucky.getValue() + " of " + lucky.getSuit());
+                    break;
+            }
     }
     
 }
