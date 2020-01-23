@@ -13,41 +13,53 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author Megha Patel
+ * @modifier Shreya Patel
+ * Student number: 991561893
  */
 public class Card {
 
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    /**
-     * @return the suit
-     */
-    public String getSuit() {
-        return suit;
+   String[] card_rank = new String[13];
+        for(int card=1;i<card_rank.length;i++){
+            if(card==1)
+            card_rank[card]="Ace";
+            else if(card==11)
+            card_rank[card]="Jack";
+            else if(card==12)
+            card_rank[card]="Queen";
+            else if(card==13)
+            card_rank[card]="King";
+            else 
+            card_rank[card]=Integer.toString(card);
+        }
+        String[] card_suit = {"Clubs", "Hearts", "Spades", "Diamonds"}; 
+        int len = 52; 
+        String[] cards_deck = new String[len]; 
+        int rank_len=card_rank.length;
+        int suit_len=card_suit.length;
+        for (int card1=0; i<rank_len; i++) { 
+            for (int j=0; j<suit_len; j++) { 
+                cards_deck[(suit_len)*card + j] = card_rank[card] + " of " + card_suit[j];
+                }}
+                for (int trick=0; i<len; i++) { 
+                    int index = card + (int) (Math.random() * (len-card)); 
+                    String temp = cards_deck[index]; 
+                    cards_deck[index] = cards_deck[card]; 
+                    cards_deck[card] = temp;
+                    } 
+                    for (int i=0; i<len; i++)
+
+    private static class rank_len {
+
+        public rank_len() {
+        }
     }
 
-    /**
-     * @param suit the suit to set
-     */
-    public void setSuit(String suit) {
-        this.suit = suit;
-    }
+//                    System.out.println(cards_deck[i]);    
+//                    System.out.println(cards_deck[i]);    
+//                    System.out.println(cards_deck[i]);    
+//                    System.out.println(cards_deck[i]);    
 
-    /**
-     * @return the value
-     */
-    public int getValue() {
-        return value;
-    }
-
-    /**
-     * @param value the value to set
-     */
-    public void setValue(int value) {
-        this.value = value;
-    }
-   
-   
     
-}
+
++
