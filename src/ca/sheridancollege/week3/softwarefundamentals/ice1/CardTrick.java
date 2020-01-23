@@ -29,8 +29,12 @@ public class CardTrick {
         }
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
+        Card luckyCard = new Card();
+        luckyCard.setValue(10);
+        luckyCard.setSuit("Spades");
         
         //Then report the result here
+        System.out.println("Lucky card: " + luckyCard.getValue() + luckyCard.getSuit());
     }
     
 }
