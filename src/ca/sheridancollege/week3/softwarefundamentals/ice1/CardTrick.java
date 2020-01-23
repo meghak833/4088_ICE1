@@ -26,6 +26,7 @@ public class CardTrick {
             c.setValue((int) (Math.random() * 12) + 1);
             c.setSuit(Card.SUITS[(int) (Math.random() * 3)]);
             magicHand[i] = c;
+            System.out.println(c.getSuit()+c.getValue());
         }
 
         //insert code to ask the user for Card value and  or Hard code it, create their card
@@ -33,12 +34,12 @@ public class CardTrick {
             boolean found = false;
             Scanner ln = new Scanner(System.in);
             System.out.println("Please enter a card suit (A String): ");
-            String suit = ln.nextLine().toLowerCase().substring(0, 0);
+            String suit = ln.nextLine().toLowerCase().substring(0, 1);
             System.out.println("Please enter a card value (An integer): ");
             int value = ln.nextInt();
             for (int i = 0; i < magicHand.length; i++) {
                 if ((magicHand[i].getValue() == value)
-                        && (magicHand[i].getSuit().toLowerCase().substring(0, 0).equals(suit))) {
+                        && (magicHand[i].getSuit().toLowerCase().substring(0, 1).equals(suit))) {
                     found = true;
                     System.out.println("Your card was found.");
                     String cardValue;
