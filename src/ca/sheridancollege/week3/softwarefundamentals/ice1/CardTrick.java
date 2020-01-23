@@ -32,9 +32,9 @@ public class CardTrick {
         try {
             boolean found = false;
             Scanner ln = new Scanner(System.in);
-            System.out.println("Please enter a card suit: ");
+            System.out.println("Please enter a card suit (A String): ");
             String suit = ln.nextLine().toLowerCase().substring(0, 0);
-            System.out.println("Please enter a card value: ");
+            System.out.println("Please enter a card value (An integer): ");
             int value = ln.nextInt();
             for (int i = 0; i < magicHand.length; i++) {
                 if ((magicHand[i].getValue() == value)
