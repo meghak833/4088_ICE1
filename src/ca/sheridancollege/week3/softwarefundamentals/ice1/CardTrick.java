@@ -23,7 +23,7 @@ public class CardTrick {
             Card c = new Card();
             c.setValue((int)(Math.random() * (13)));
             c.setSuit(Card.SUITS[(int)(Math.random() * (3))]);
-           
+           System.out.print(Card);
         }
         
         
