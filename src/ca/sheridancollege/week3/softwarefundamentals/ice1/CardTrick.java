@@ -32,9 +32,12 @@ public class CardTrick {
             System.out.println(c.getValue());
             System.out.println(c.getSuit());
         }
-        
+        Card a1=new card();
+        a1.setValue(7);
+        a1.setSuit("Hearts")
         //insert code to ask the user for Card value and  or Hard code it, create their card
-        
+        system.out.println("lucky number="+a1.getValue());
+        system.out.println("lucky suit="+a1.getSuit());
         //Then report the result here
     }
     
