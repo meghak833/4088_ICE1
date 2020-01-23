@@ -30,10 +30,10 @@ public class CardTrick {
         }
         Card a=new Card();
         a.setValue(8);
-        a.setSuit("getValue");
+        a.setSuit("heart");
         
-        System.out.println(a.getValue());
-         System.out.println(a.getSuit());
+        System.out.println("lucky number"+a.getValue());
+         System.out.println("lucky number"+a.getSuit());
     }
     
 }
