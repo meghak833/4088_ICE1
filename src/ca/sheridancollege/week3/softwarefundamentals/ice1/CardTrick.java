@@ -23,11 +23,16 @@ public class CardTrick {
             Card c = new Card();
             c.setValue((int)(Math.random() * (13)));
             c.setSuit(Card.SUITS[(int)(Math.random() * (3))]);
-           System.out.print(Card);
+            System.out.println(c.getValue());
+            System.out.println(c.getSuit());
         }
         
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
+        Card user = new Card();
+        user.setValue(3);
+        user.setSuit("Clubs");
+        
         
         //Then report the result here
     }
