@@ -63,6 +63,7 @@ public class CardTrick {
         }
         //Then report the result here
         System.out.println(userCard.toString(userSuit, suitResult));
+        System.out.println("Is this your card?");
     }
     
 }
