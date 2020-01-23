@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
+import java.util.Random;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
@@ -17,16 +18,47 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
+        //random number generator
+        Random generator = new Random();
+        
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
+           // c.setValue(insert call to random number generator here);
+           c.setValue(generator.nextInt(13)+1);
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setSuit(Card.SUITS[generator.nextInt(4)]);
+            
+            magicHand[i] = c;
         }
+        Card test = magicHand[0];
+        System.out.println(test.getValue());
+       
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
         
+        //input card
+        Card input = new Card();
+        
+        input.setSuit("Hearts");
+        input.setValue(1);
+  
+        //check if card is in hands
+        for(int j=0;j<magicHand.length;j++){
+            boolean isInHand = magicHand[j].getSuit().equals(input.getSuit()) && magicHand[j].getValue()==input.getValue();
+           if(isInHand){
+               System.out.println("Found " + input.getValue() + " of " + input.getSuit() + " in hand.");
+               j = magicHand.length;
+           }
+           else if(j == magicHand.length-1){
+               System.out.println(input.getValue() + " of " + input.getSuit() + " not found.");
+           }
+            
+        }
+       
+        
         //Then report the result here
     }
+    
     
 }
