@@ -32,6 +32,12 @@ public class CardTrick {
        users.setSuit(in.nextLine());
        System.out.println("What is your card's Number?(Ace = 1, Jack -11, Queen =12, King = 13)");
        users.setValue(in.nextInt());
+       
+       int userNum = users.getValue();
+       String userSuit = users.getSuit();
+       
+       
+       System.out.println("Your Card: " + userNum + " of " + userSuit);
         //insert code to ask the user for Card value and  or Hard code it, create their card           
         int match = 0;
        for(int s = 0; s < magicHand.length;s++){
