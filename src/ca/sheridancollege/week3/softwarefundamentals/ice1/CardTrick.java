@@ -25,6 +25,7 @@ public class CardTrick {
             c.setValue((int)(Math.random() * 13) + 1);
             c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
             magicHand[i] = c;
+            System.out.println(magicHand[i].getValue() + magicHand[i].getSuit());
         }
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
