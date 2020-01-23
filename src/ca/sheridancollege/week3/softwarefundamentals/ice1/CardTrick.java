@@ -15,34 +15,17 @@ import java.utli.*:
 public class CardTrick {
     
     public static void main(String[] args){
-   Scanner in = new Scanner(System.in);
-        Card[] magicHand = new Card[7];
+      Scanner in = new Scanner(System.in);
+        Int[] magicHand = new Int[7];
+        String[] magicHandSuit = new String[7];
         
         for (int i=0; i<magicHand.length; i++) {
             Card c = new Card();
             c.setValue((int)(Math.random()*13));
             c.setSuit(Card.SUITS[(int)Math.random()*4]);
-            magicHand[i] = c;
-            System.out.print(c);
+            magicHand[i] = c.getValue();
+            magicHandSuit[i] = c.getSuit();
         }
-       Card users = new Card();
-       System.out.println("What is your card's suit?");
-       users.setSuit(in.nextLine());
-       System.out.println("What is your card's Number?(Ace = 1, Jack -11, Queen =12, King = 13)");
-       users.setValue(in.nextInt());
-        //insert code to ask the user for Card value and  or Hard code it, create their card           
-        int match = 0;
-       for(int s = 0; s < magicHand.length;s++){
-           if(magicHand[s] == users){
-            match = 1;
-            break;
-           }else{match = 0;}
-       }
-       if(match == 0){
-           System.out.println("There was no match.");
-       }else{
-           System.out.println("There is a Match!");
-       }
         //Then report the result here
     }  
 }
