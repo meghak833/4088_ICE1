@@ -18,18 +18,26 @@ public class CardTrick {
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
+        Card luckyv = new Card();
+        Card luckys = new Card();
         
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
             c.setValue((int)Math.random() * 10);
             c.setSuit(Card.SUITS[(int)(Math.random() * 4)]);
+            System.out.println(c);
         }
         
         System.out.println("Is this your card?");
         System.out.println(magicHand);
         
-        System.out.println(c);
+        
+        luckyv = Card.getValue(8);
+        luckys = Card.getSuit("Hearts");
+        
+        System.out.println("Lucky card is: " + luckyv + " of " + luckys);
+        
         
     }
     
