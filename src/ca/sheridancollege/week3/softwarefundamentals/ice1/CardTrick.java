@@ -56,6 +56,10 @@ public class CardTrick {
        
         
         //Then report the result here
+        /* OUTPUT
+        1 of Hearts not found.
+        BUILD SUCCESSFUL (total time: 0 seconds)
+        */
     }
     
     
