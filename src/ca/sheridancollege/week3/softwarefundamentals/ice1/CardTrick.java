@@ -19,8 +19,6 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
-        double randCard = (Math.random() * 13);
-        double randSuit = (Math.random() * 4);
         
         
         for (int i=0; i<magicHand.length; i++)
@@ -28,17 +26,23 @@ public class CardTrick {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-            c.setValue((int) randCard);
-            c.setSuit(Card.SUITS[(int)randSuit]);   
+            c.setValue((int)(Math.random()* 13));
+            c.setSuit(Card.SUITS[(int)(Math.random() * 4)]);   
             
-            System.out.println(c);
+            System.out.println("Card " + (i+1) + ": " + c.getValue()+ " of " + c.getSuit());
         }
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
        
-        
+        Card magicCard = new Card();
+        magicCard.setValue(9);
+        magicCard.setSuit("Hearts");
+
         //Then report the result here
-        System.out.println(yourCard.getValue());
+        
+        
+        
+        System.out.println("Your magic card: " + magicCard.getValue()+ " of " + magicCard.getSuit());
     }
     
 }
