@@ -54,8 +54,7 @@ public class Card {
         public rank_len() {
         }
     }
-
-//                    System.out.println(cards_deck[i]);    
+                System.out.println(cards_deck[i]);    
 //                    System.out.println(cards_deck[i]);    
 //                    System.out.println(cards_deck[i]);    
 //                    System.out.println(cards_deck[i]);    
