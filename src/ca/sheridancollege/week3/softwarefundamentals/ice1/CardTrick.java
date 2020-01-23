@@ -28,10 +28,12 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
+        Card a=new Card();
+        a.setValue(8);
+        a.setSuit("getValue");
         
-        //insert code to ask the user for Card value and  or Hard code it, create their card
-        
-        //Then report the result here
+        System.out.println(a.getValue());
+         System.out.println(a.getSuit());
     }
     
 }
