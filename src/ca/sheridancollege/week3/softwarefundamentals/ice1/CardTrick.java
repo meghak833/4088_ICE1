@@ -30,6 +30,7 @@ public class CardTrick {
         //insert code to ask the user for Card value and  or Hard code it, create their card
         
         //Then report the result here
+        System.out.println(cards_deck[i]);
     }
     
 }
