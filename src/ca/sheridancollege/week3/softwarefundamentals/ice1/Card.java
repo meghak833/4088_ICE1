@@ -14,6 +14,10 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * add your name as a modifier.
  * @author Megha Patel
  */
+/**
+ * 
+ * @author vrudi
+ */
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
