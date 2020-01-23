@@ -24,19 +24,19 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            c.setValue((int)Math.random() * 10);
+            c.setValue((int)(Math.random() * 10));
             c.setSuit(Card.SUITS[(int)(Math.random() * 4)]);
-            System.out.println(c);
+            System.out.println(c.getValue() + " " + c.getSuit());
         }
         
         System.out.println("Is this your card?");
         System.out.println(magicHand);
         
         
-        luckyv = Card.getValue(8);
-        luckys = Card.getSuit("Hearts");
+        luckyv.setValue(8);
+        luckys.setSuit("Hearts");
         
-        System.out.println("Lucky card is: " + luckyv + " of " + luckys);
+       System.out.println("Lucky card is: " + luckyv.getValue() + " of " + luckys.getSuit());
         
         
     }
