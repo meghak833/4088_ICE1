@@ -32,7 +32,7 @@ public class CardTrick {
         
         // Print the 7 cards
         for (int i = 0; i < magicHand.length; i++){
-            System.out.print(magicHand.get(i) + " ")
+            System.out.print(magicHand[i] + " ")
         }
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
