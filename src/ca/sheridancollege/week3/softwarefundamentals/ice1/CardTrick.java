@@ -31,8 +31,6 @@ public class CardTrick {
             
             magicHand[i] = c;
         }
-        Card test = magicHand[0];
-        System.out.println(test.getValue());
        
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
