@@ -26,6 +26,25 @@ public class CardTrick {
             Card c = new Card();
             c.setValue(rnd.nextInt(12) + 1);
             c.setSuit(Card.SUITS[rnd.nextInt(4)]);
+            
+            //added printing statements in git
+            switch(c.getValue()) {
+                case 1:
+                    System.out.println("Ace" + " of " + c.getSuit());
+                    break;
+                case 11:
+                    System.out.println("Jack" + " of " + c.getSuit());
+                    break;
+                case 12:
+                    System.out.println("Queen" + " of " + c.getSuit());
+                    break;
+                case 13:
+                    System.out.println("King" + " of " + c.getSuit());
+                    break;
+                 default:
+                     System.out.println(c.getValue() + " of " + c.getSuit());
+                     break;
+            }
         }
         
         //insert code to ask the user for Card value and  or Hard code it, create their card
