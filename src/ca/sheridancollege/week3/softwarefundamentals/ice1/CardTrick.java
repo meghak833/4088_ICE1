@@ -26,6 +26,25 @@ public class CardTrick {
             magicHand[i] = c.getValue();
             magicHandSuit[i] = c.getSuit();
         }
+        
+       Card users = new Card();
+       System.out.println("What is your card's suit?(Hearts, Diamonds, Spades, Clubs)");
+       users.setSuit(in.nextLine());
+       System.out.println("What is your card's Number?(Ace = 1, Jack -11, Queen =12, King = 13)");
+       users.setValue(in.nextInt());
+        //insert code to ask the user for Card value and  or Hard code it, create their card           
+        int match = 0;
+       for(int s = 0; s < magicHand.length;s++){
+           if(magicHandSuit[s].equals(users.getSuit()) && magicHand[s] == users.getValue()){
+            match = 1;
+            break;
+           }else{match = 0;}
+       }
+       if(match == 0){
+           System.out.println("There was no match.");
+       }else{
+           System.out.println("There is a Match!");
+       }
         //Then report the result here
     }  
 }
