@@ -42,6 +42,12 @@ public class CardTrick {
         {
         System.out.println(magicHand[i].getValue() + " of " + magicHand[i].getSuit());
         }
+        
+        for (int i=0; i<magicHand.length; i++)
+        {
+            if (magicHand[i].getValue() == luckyValue && magicHand[i].getSuit().equals(luckySuit))
+                System.out.println("\nYou have your lucky card!");
+        }
     }
     
 }
