@@ -30,6 +30,13 @@ public class CardTrick{
         int v = value[cardv];
         String sa = suit[cardv];
         System.out.println("Card value is: " + v + " " + sa);
+        System.out.println("Hand is: " );
+        for (int i=0; i<value.length; i++)
+        {
+            v = value[i];
+            sa = suit[i];
+            System.out.println(v + " " + sa);
+        }
     }
     
 }
